@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import sanityClient from '../pages/api/client'
 
 
 export default function Home() {
@@ -9,8 +10,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-start justify-items-start w-full px-20 text-left">
-        <h1 className="text-6xl font-bold font-mono pt-72 bg-yellow-300">Hi I'm Micheal Daralola</h1>
+      <main className="flex flex-col items-start justify-items-start sm:w-full px-20 text-left">
+        <h1 className="text-6xl font-bold font-mono pt-72 bg-yellow-300 md:w-72">Hi I'm Micheal Daralola</h1>
         <p className="text-4xl font-mono">Fullstack focused software developer, building products that scale to Thousands of users.</p>
         <div className="flex space-x-4">
         </div>
@@ -23,14 +24,16 @@ export default function Home() {
         <div className="flex flex-row border-box pl-24 pr-24">
         </div>
         <h2 className="text-6xl font-bold pt-16">THE{' '}<b className="text-yellow-600">WORKS</b></h2>
-        <p className="pr-96">From programming to marketing & business development, Micheal's work spans a wide range of disciplines. As a developer, he generally works in the javascript stack but he's always open to learning new technologies and frameworks. Here's a little skills list below, and a portfolio detailing his positions and projects (his GitHub is quite empty because most of his work has been done on private respositories, so he'd recommend reading through his portfolio instead of his GitHub).</p>
-        <div class="flex flex-row space-x-4">
-          <h1>Vuejs</h1>
-          <h1> Reacjs</h1>
-          <h1>Nodejs</h1>
-          <h1>Typescript</h1>
-          <h1>Go</h1>
+        <p className="sm:pr-96 sm:pb-12">From programming to marketing & business development, Micheal's work spans a wide range of disciplines. As a developer, he generally works in the javascript stack but he's always open to learning new technologies and frameworks. Here's a little skills list below, and a portfolio detailing his positions and projects (his GitHub is quite empty because most of his work has been done on private respositories, so he'd recommend reading through his portfolio instead of his GitHub).</p>
+        <div className="grid grid-cols-3 gap-4 pb-36">
+          <h1><li>Vuejs</li></h1>
+          <h1><li>Reactjs</li></h1>
+          <h1><li>Nodejs</li></h1>
+          <h1><li>Typescript</li></h1>
+          <h1><li>Go</li></h1>
         </div>
+
+
       </main>
       <footer className="flex items-center justify-center w-full h-24 border-t">
         <a
